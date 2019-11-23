@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="611.0" prefWidth="1043.0" styleClass="root" stylesheets="@../cssFiles/TrangChu.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllerFiles.ControllerTrangChu">
+   <children>
+      <AnchorPane layoutX="-2.0" prefHeight="144.0" prefWidth="1052.0" styleClass="root" stylesheets="@../cssFiles/TrangChu1.css" />
+      <AnchorPane layoutX="153.0" layoutY="223.0" prefHeight="236.0" prefWidth="200.0" styleClass="root" stylesheets="@../cssFiles/TrangChu2.css" />
+      <AnchorPane layoutX="661.0" layoutY="223.0" prefHeight="236.0" prefWidth="200.0" styleClass="root" stylesheets="@../cssFiles/TrangChu3.css" />
+      <Hyperlink layoutX="951.0" layoutY="161.0" onAction="#dangxuat" text="Đăng Xuất">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Hyperlink>
+      <JFXButton layoutX="201.0" layoutY="480.0" onAction="#thongtin" style="-fx-background-color: skyblue;" text="Thông Tin">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="729.0" layoutY="480.0" onAction="#ketqua" style="-fx-background-color: skyblue;" text="Kết Quả">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

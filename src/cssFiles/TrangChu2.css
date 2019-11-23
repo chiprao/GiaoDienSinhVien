@@ -1,0 +1,4 @@
+.root {
+    -fx-background-image: url('../imagesFiles/ThongTinSV.jpg');
+    -fx-background-size: cover;
+}
