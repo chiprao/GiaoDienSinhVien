@@ -102,7 +102,7 @@ public class ControllerThongTinTrangChu implements Initializable {
         List<StudentDK> temp = new ArrayList<>();
         String find = txFind.getText();
         switch (toogleGroupValue) {
-            case "By ID": {
+            case "ID": {
                 temp = getList();
                 temp = temp.stream()
                         .filter(student -> student.getId() == Integer.parseInt(find))
@@ -112,7 +112,7 @@ public class ControllerThongTinTrangChu implements Initializable {
                 myTable.refresh();
                 break;
             }
-            case "By Name": {
+            case "Tên": {
                 temp = getList();
                 temp = temp.stream()
                         .filter(student -> student.getTen().equals(find))
@@ -122,7 +122,7 @@ public class ControllerThongTinTrangChu implements Initializable {
                 myTable.refresh();
                 break;
             }
-            case "By Class": {
+            case "Lớp": {
                 temp = getList();
                 temp = temp.stream()
                         .filter(student -> student.getLop().equals(find))
@@ -142,6 +142,7 @@ public class ControllerThongTinTrangChu implements Initializable {
         studentList = FXCollections.observableArrayList(temp);
         myTable.setItems(studentList);
         myTable.refresh();
+        txFind.setText("");
     }
 
     public void editStudent(ActionEvent event) {

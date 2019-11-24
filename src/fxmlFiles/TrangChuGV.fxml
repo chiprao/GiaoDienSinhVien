@@ -20,7 +20,7 @@
             <Font size="13.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="729.0" layoutY="480.0" onAction="#ketqua" style="-fx-background-color: skyblue;" text="Kết Quả">
+      <JFXButton layoutX="729.0" layoutY="480.0"  style="-fx-background-color: skyblue;" text="Kết Quả">
          <font>
             <Font size="13.0" />
          </font>

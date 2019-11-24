@@ -55,7 +55,7 @@ public class EditController implements Initializable {
 
     StudentDK temp;
 
-    String ac;
+    String ac="add";
 
 
     public static final LocalDate LOCAL_DATE(String dateString) {
@@ -84,9 +84,9 @@ public class EditController implements Initializable {
                 , Integer.parseInt(id.getText()),
                 name.getText(),
                 Integer.parseInt(age.getText()),
+                gt.getText(),
                 lop.getText(),
                 diachi.getText(),
-                gt.getText(),
                 new Date(Integer.parseInt(date[0]) - 1900, Integer.parseInt(date[1]), Integer.parseInt(date[2])));
         list.remove(temp.getStt() - 1);
         list.add(temp.getStt() - 1, s);
@@ -114,8 +114,13 @@ public class EditController implements Initializable {
         } else {
             add();
         }
-        Main main = new Main();
-        main.changeScene("/fxmlFiles/ThongTinSinhTrangChu.fxml");
+//        Main main = new Main();
+//        main.changeScene("/fxmlFiles/ThongTinSinhTrangChu.fxml");
+        Parent root = FXMLLoader.load(getClass().getResource("/fxmlFiles/ThongTinSinhTrangChu.fxml"));
+        Scene scene = new Scene(root);
+//        Stage NewStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+//        NewStage.setScene(scene);
+//        NewStage.show();
         Stage stage = (Stage) closeButton.getScene().getWindow();
         stage.close();
     }

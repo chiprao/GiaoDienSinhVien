@@ -24,7 +24,7 @@ public class ReadFileXML {
 
     public static List<Student> readListStudent() throws IOException {
         List<Student> list = new ArrayList<>();
-        FileInputStream fis = new FileInputStream(new File("E:\\JaVa\\GiaoDienSinhVien\\student .xml"));
+        FileInputStream fis = new FileInputStream(new File("E:\\JaVa\\GiaoDienSinhVien\\student.xml"));
         XMLDecoder decoder = new XMLDecoder(fis);
         list = (List<Student>) decoder.readObject();
         decoder.close();
