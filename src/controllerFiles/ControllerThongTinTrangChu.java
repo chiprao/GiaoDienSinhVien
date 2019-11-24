@@ -61,6 +61,7 @@ public class ControllerThongTinTrangChu implements Initializable {
         NewStage.setScene(scene);
         NewStage.show();
     }
+
     public List<StudentDK> getList() throws IOException {
         list = ReadFileXML.readListStudent();
         List<StudentDK> li = new ArrayList<>();

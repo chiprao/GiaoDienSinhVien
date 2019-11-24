@@ -2,17 +2,16 @@ package controllerFiles;
 
 import Data.ReadFileXML;
 import Data.WriteFileXML;
-import javaFiles.Main;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.*;
+import javafx.scene.control.Button;
+import javafx.scene.control.DatePicker;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import model.Student;
 import model.StudentDK;
@@ -55,7 +54,7 @@ public class EditController implements Initializable {
 
     StudentDK temp;
 
-    String ac="add";
+    String ac = "add";
 
 
     public static final LocalDate LOCAL_DATE(String dateString) {
@@ -92,6 +91,7 @@ public class EditController implements Initializable {
         list.add(temp.getStt() - 1, s);
         WriteFileXML.wrieData(list);
     }
+
     public void add() throws IOException {
         LocalDate localDate = birthday.getValue();
         List<Student> list = ReadFileXML.readListStudent();

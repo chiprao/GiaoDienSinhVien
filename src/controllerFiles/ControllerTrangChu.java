@@ -26,7 +26,7 @@ public class ControllerTrangChu implements Initializable {
 
     @FXML
     public void Ketqua(javafx.event.ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("/fxmlFiles/KetQuaTrangChu.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/fxmlFiles/KetQuaTrangChuGV.fxml"));
         Scene scene = new Scene(root);
         Stage NewStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         NewStage.setScene(scene);
