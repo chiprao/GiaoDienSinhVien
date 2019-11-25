@@ -28,24 +28,34 @@ public class ControllerThongTinTrangChu implements Initializable {
 
     @FXML
     TableView<StudentDK> myTable;
+
     @FXML
     TableColumn<StudentDK, Integer> sttColum;
+
     @FXML
     TableColumn<StudentDK, Integer> idColum;
     @FXML
+
     TableColumn<StudentDK, String> nameColum;
+
     @FXML
     TableColumn<StudentDK, Integer> ageColum;
+
     @FXML
     TableColumn<StudentDK, String> birthdayColum;
+
     @FXML
     TableColumn<StudentDK, String> gtColum;
+
     @FXML
     TableColumn<StudentDK, String> classColum;
+
     @FXML
     TableColumn<StudentDK, String> addressColum;
+
     @FXML
     TextField txFind;
+
     @FXML
     ToggleGroup findGroup;
 

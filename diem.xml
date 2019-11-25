@@ -9,6 +9,18 @@
                 <void property="gioitinh">
                     <string>Nam</string>
                 </void>
+                <void property="giuaki">
+                    <string>7</string>
+                </void>
+                <void property="cuoiki">
+                    <string>8</string>
+                </void>
+                <void property="tongket">
+                    <string>8</string>
+                </void>
+                <void property="xeploai">
+                    <string>Đạt</string>
+                </void>
                 <void property="id">
                     <int>111</int>
                 </void>
@@ -38,6 +50,18 @@
                 </void>
                 <void property="gioitinh">
                     <string>Nữ</string>
+                </void>
+                <void property="giuaki">
+                    <string>7</string>
+                </void>
+                <void property="cuoiki">
+                    <string>8</string>
+                </void>
+                <void property="tongket">
+                    <string>8</string>
+                </void>
+                <void property="xeploai">
+                    <string>Đạt</string>
                 </void>
                 <void property="id">
                     <int>112</int>
@@ -69,6 +93,18 @@
                 <void property="gioitinh">
                     <string>Nam</string>
                 </void>
+                <void property="giuaki">
+                    <string>7</string>
+                </void>
+                <void property="cuoiki">
+                    <string>8</string>
+                </void>
+                <void property="tongket">
+                    <string>8</string>
+                </void>
+                <void property="xeploai">
+                    <string>Đạt</string>
+                </void>
                 <void property="id">
                     <int>113</int>
                 </void>
@@ -98,6 +134,18 @@
                 </void>
                 <void property="gioitinh">
                     <string>Nữ</string>
+                </void>
+                <void property="giuaki">
+                    <string>7</string>
+                </void>
+                <void property="cuoiki">
+                    <string>8</string>
+                </void>
+                <void property="tongket">
+                    <string>8</string>
+                </void>
+                <void property="xeploai">
+                    <string>Đạt</string>
                 </void>
                 <void property="id">
                     <int>114</int>
@@ -129,6 +177,18 @@
                 <void property="gioitinh">
                     <string>Nam</string>
                 </void>
+                <void property="giuaki">
+                    <string>7</string>
+                </void>
+                <void property="cuoiki">
+                    <string>8</string>
+                </void>
+                <void property="tongket">
+                    <string>8</string>
+                </void>
+                <void property="xeploai">
+                    <string>Đạt</string>
+                </void>
                 <void property="id">
                     <int>115</int>
                 </void>
@@ -158,6 +218,18 @@
                 </void>
                 <void property="gioitinh">
                     <string>Nam</string>
+                </void>
+                <void property="giuaki">
+                    <string>7</string>
+                </void>
+                <void property="cuoiki">
+                    <string>8</string>
+                </void>
+                <void property="tongket">
+                    <string>8</string>
+                </void>
+                <void property="xeploai">
+                    <string>Đạt</string>
                 </void>
                 <void property="id">
                     <int>116</int>
@@ -189,6 +261,18 @@
                 <void property="gioitinh">
                     <string>Nam</string>
                 </void>
+                <void property="giuaki">
+                    <string>7</string>
+                </void>
+                <void property="cuoiki">
+                    <string>8</string>
+                </void>
+                <void property="tongket">
+                    <string>8</string>
+                </void>
+                <void property="xeploai">
+                    <string>Đạt</string>
+                </void>
                 <void property="id">
                     <int>117</int>
                 </void>
@@ -218,6 +302,18 @@
                 </void>
                 <void property="gioitinh">
                     <string>Nam</string>
+                </void>
+                <void property="giuaki">
+                    <string>7</string>
+                </void>
+                <void property="cuoiki">
+                    <string>8</string>
+                </void>
+                <void property="tongket">
+                    <string>8</string>
+                </void>
+                <void property="xeploai">
+                    <string>Đạt</string>
                 </void>
                 <void property="id">
                     <int>118</int>
@@ -249,6 +345,18 @@
                 <void property="gioitinh">
                     <string>Nam</string>
                 </void>
+                <void property="giuaki">
+                    <string>7</string>
+                </void>
+                <void property="cuoiki">
+                    <string>8</string>
+                </void>
+                <void property="tongket">
+                    <string>8</string>
+                </void>
+                <void property="xeploai">
+                    <string>Đạt</string>
+                </void>
                 <void property="id">
                     <int>119</int>
                 </void>
@@ -278,6 +386,18 @@
                 </void>
                 <void property="gioitinh">
                     <string>Nam</string>
+                </void>
+                <void property="giuaki">
+                    <string>7</string>
+                </void>
+                <void property="cuoiki">
+                    <string>8</string>
+                </void>
+                <void property="tongket">
+                    <string>8</string>
+                </void>
+                <void property="xeploai">
+                    <string>Đạt</string>
                 </void>
                 <void property="id">
                     <int>1110</int>
