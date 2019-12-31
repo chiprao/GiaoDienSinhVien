@@ -116,7 +116,7 @@ public class EditController implements Initializable {
         }
 //        Main main = new Main();
 //        main.changeScene("/fxmlFiles/ThongTinSinhTrangChu.fxml");
-        Parent root = FXMLLoader.load(getClass().getResource("/fxmlFiles/ThongTinSinhTrangChu.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/view/ThongTinSinhTrangChu.fxml"));
         Scene scene = new Scene(root);
 //        Stage NewStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
 //        NewStage.setScene(scene);

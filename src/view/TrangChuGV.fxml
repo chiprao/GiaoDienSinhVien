@@ -5,11 +5,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="611.0" prefWidth="1043.0" styleClass="root" stylesheets="@../cssFiles/TrangChu.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllerFiles.ControllerTrangChu">
+<AnchorPane prefHeight="611.0" prefWidth="1043.0" styleClass="root" stylesheets="@../model/cssFiles/TrangChu.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllerFiles.ControllerTrangChu">
    <children>
-      <AnchorPane layoutX="-2.0" prefHeight="144.0" prefWidth="1052.0" styleClass="root" stylesheets="@../cssFiles/TrangChu1.css" />
-      <AnchorPane layoutX="153.0" layoutY="223.0" prefHeight="236.0" prefWidth="200.0" styleClass="root" stylesheets="@../cssFiles/TrangChu2.css" />
-      <AnchorPane layoutX="661.0" layoutY="223.0" prefHeight="236.0" prefWidth="200.0" styleClass="root" stylesheets="@../cssFiles/TrangChu3.css" />
+      <AnchorPane layoutX="-2.0" prefHeight="144.0" prefWidth="1052.0" styleClass="root" stylesheets="@../model/cssFiles/TrangChu1.css" />
+      <AnchorPane layoutX="153.0" layoutY="223.0" prefHeight="236.0" prefWidth="200.0" styleClass="root" stylesheets="@../model/cssFiles/TrangChu2.css" />
+      <AnchorPane layoutX="661.0" layoutY="223.0" prefHeight="236.0" prefWidth="200.0" styleClass="root" stylesheets="@../model/cssFiles/TrangChu3.css" />
       <Hyperlink layoutX="951.0" layoutY="161.0" onAction="#dangxuat" text="Đăng Xuất">
          <font>
             <Font name="System Bold" size="15.0" />

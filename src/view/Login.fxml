@@ -9,10 +9,10 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="619.0" prefWidth="890.0" styleClass="root" stylesheets="@../cssFiles/Login1.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllerFiles.ControllerLogin">
+<AnchorPane prefHeight="716.0" prefWidth="927.0" styleClass="root" stylesheets="@../model/cssFiles/Login1.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllerFiles.ControllerLogin">
    <children>
-      <AnchorPane layoutY="14.0" prefHeight="131.0" prefWidth="890.0" style="-fx-background-color: blue; -fx-border-radius: 20;" styleClass="root" stylesheets="@../cssFiles/Login.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-      <AnchorPane layoutX="204.0" layoutY="168.0" prefHeight="404.0" prefWidth="508.0" style="-fx-border-color: blue; -fx-border-radius: 20; -fx-border-width: 1;">
+      <AnchorPane layoutY="14.0" prefHeight="131.0" prefWidth="890.0" style="-fx-background-color: blue; -fx-border-radius: 20;" styleClass="root" stylesheets="@../model/cssFiles/Login.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <AnchorPane layoutX="220.0" layoutY="169.0" prefHeight="404.0" prefWidth="508.0" style="-fx-border-color: blue; -fx-border-radius: 20; -fx-border-width: 1;">
          <children>
             <Label layoutX="187.0" layoutY="14.0" prefHeight="30.0" prefWidth="126.0" style="-fx-background-color: white;" text="ĐĂNG NHẬP">
                <font>
@@ -45,5 +45,20 @@
                </font>
             </JFXButton>
          </children></AnchorPane>
+      <Label layoutX="287.0" layoutY="591.0" text="Số 459 Tôn Đức Thắng, Quận Liên Chiểu, Thành phố Đà Nẵng">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="295.0" layoutY="619.0" text="Điện thoại: (84) - 236 - 3841 323, Fax: (84) - 236 - 3842 953">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="374.0" layoutY="651.0" text="Email: ued.help247@gmail.com">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

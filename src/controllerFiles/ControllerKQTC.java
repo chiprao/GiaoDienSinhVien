@@ -3,6 +3,7 @@ package controllerFiles;
 import Data.ReadFileXML;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -15,7 +16,6 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
-import model.StudenrKQ;
 import model.Student;
 import model.StudentDK;
 
@@ -55,29 +55,17 @@ public class ControllerKQTC implements Initializable {
     TableColumn<StudentDK, String> addressColum;
 
     @FXML
-    TableColumn<StudenrKQ, String> gkColum;
-
-    @FXML
-    TableColumn<StudenrKQ, String> ckColum;
-
-    @FXML
-    TableColumn<StudenrKQ, String> tkColum;
-
-    @FXML
-    TableColumn<StudenrKQ, String> xlColum;
-
-    @FXML
     TextField txFind;
 
     @FXML
     ToggleGroup findGroup;
 
-    List<Student> list = new ArrayList<>();
+    List<Student> lists = new ArrayList<>();
     private ObservableList<StudentDK> studentList;
 
     @FXML
-    public void trangchu(javafx.event.ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("/fxmlFiles/TrangChuGV.fxml"));
+    public void trangchu(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("/view/TrangChuGV.fxml"));
         Scene scene = new Scene(root);
         Stage NewStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         NewStage.setScene(scene);
@@ -85,9 +73,9 @@ public class ControllerKQTC implements Initializable {
     }
 
     public List<StudentDK> getList() throws IOException {
-        list = ReadFileXML.readListStudent();
+        lists = ReadFileXML.readListStudent();
         List<StudentDK> li = new ArrayList<>();
-        for (Student student : list) {
+        for (Student student : lists) {
             li.add(new StudentDK(student.getStt(),
                     student.getId(),
                     student.getTen(),
@@ -99,7 +87,6 @@ public class ControllerKQTC implements Initializable {
         }
         return li;
     }
-
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         try {
@@ -112,10 +99,6 @@ public class ControllerKQTC implements Initializable {
             gtColum.setCellValueFactory(new PropertyValueFactory<StudentDK, String>("gioitinh"));
             classColum.setCellValueFactory(new PropertyValueFactory<StudentDK, String>("lop"));
             addressColum.setCellValueFactory(new PropertyValueFactory<StudentDK, String>("diachi"));
-            gkColum.setCellValueFactory(new PropertyValueFactory<StudenrKQ, String>("ngaysinh"));
-            ckColum.setCellValueFactory(new PropertyValueFactory<StudenrKQ, String>("gioitinh"));
-            tkColum.setCellValueFactory(new PropertyValueFactory<StudenrKQ, String>("lop"));
-            xlColum.setCellValueFactory(new PropertyValueFactory<StudenrKQ, String>("diachi"));
             myTable.setItems(studentList);
             myTable.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
         } catch (Exception e) {

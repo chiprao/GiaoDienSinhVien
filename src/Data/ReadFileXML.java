@@ -31,4 +31,15 @@ public class ReadFileXML {
         fis.close();
         return list;
     }
+
+    public static List<Student> readKQ() throws IOException {
+        List<Student> list = new ArrayList<>();
+        FileInputStream fis = new FileInputStream(new File("E:\\JaVa\\GiaoDienSinhVien\\diem.xml"));
+        XMLDecoder decoder = new XMLDecoder(fis);
+        list = (List<Student>) decoder.readObject();
+        decoder.close();
+        fis.close();
+        return list;
+    }
+
 }

@@ -7,10 +7,10 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="643.0" prefWidth="601.0" styleClass="root" stylesheets="@../cssFiles/Login1.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllerFiles.EditController">
+<AnchorPane prefHeight="643.0" prefWidth="601.0" styleClass="root" stylesheets="@../model/cssFiles/Login1.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllerFiles.EditController">
    <children>
-      <AnchorPane layoutX="1.0" prefHeight="98.0" prefWidth="600.0" styleClass="root" stylesheets="@../cssFiles/TrangChu1.css" />
-      <Label layoutX="62.0" layoutY="165.0" text="ID">
+      <AnchorPane layoutX="1.0" prefHeight="98.0" prefWidth="600.0" styleClass="root" stylesheets="@../model/cssFiles/TrangChu1.css" />
+      <Label layoutX="62.0" layoutY="165.0" text="Postal Code ">
          <font>
             <Font size="15.0" />
          </font>
@@ -20,12 +20,12 @@
             <Font name="System Bold" size="20.0" />
          </font>
       </Label>
-      <Label layoutX="59.0" layoutY="216.0" text="Tên">
+      <Label layoutX="59.0" layoutY="216.0" text="Fist name">
          <font>
             <Font size="15.0" />
          </font>
       </Label>
-      <Label layoutX="59.0" layoutY="276.0" text="Tuổi">
+      <Label layoutX="59.0" layoutY="276.0" text="Last Name">
          <font>
             <Font size="15.0" />
          </font>
@@ -35,17 +35,17 @@
             <Font size="15.0" />
          </font>
       </Label>
-      <Label layoutX="65.0" layoutY="447.0" text="Lớp">
+      <Label layoutX="65.0" layoutY="447.0" text="Steet">
          <font>
             <Font size="15.0" />
          </font>
       </Label>
-      <Label layoutX="58.0" layoutY="395.0" text="Giới Tính">
+      <Label layoutX="58.0" layoutY="395.0" text="Nick Name">
          <font>
             <Font size="15.0" />
          </font>
       </Label>
-      <Label layoutX="64.0" layoutY="499.0" text="Địa Chỉ">
+      <Label layoutX="64.0" layoutY="499.0" text="City">
          <font>
             <Font size="15.0" />
          </font>
@@ -54,7 +54,7 @@
       <TextField fx:id="name" layoutX="168.0" layoutY="214.0" prefHeight="25.0" prefWidth="266.0" />
       <TextField fx:id="age" layoutX="168.0" layoutY="274.0" prefHeight="25.0" prefWidth="266.0" />
       <DatePicker fx:id="birthday" layoutX="168.0" layoutY="333.0" prefHeight="25.0" prefWidth="266.0" />
-      <JFXButton layoutX="85.0" layoutY="573.0" onAction="#submitEdit" style="-fx-background-color: skyblue;" text="Submit">
+      <JFXButton layoutX="85.0" layoutY="573.0" onAction="#submitEdit" style="-fx-background-color: skyblue;" text="OK">
          <font>
             <Font size="15.0" />
          </font>

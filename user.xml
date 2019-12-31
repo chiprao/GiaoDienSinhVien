@@ -4,7 +4,7 @@
         <void method="add">
             <object class="model.User">0
                 <void property="name">
-                    <string>giaovien</string>
+                    <string>1</string>
                 </void>
                 <void property="password">
                     <string>1</string>

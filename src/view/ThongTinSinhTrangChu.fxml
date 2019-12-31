@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="819.0" prefWidth="1132.0" styleClass="root" stylesheets="@../model/cssFiles/Login1.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllerFiles.ControllerThongTinTrangChu">
+   <children>
+      <AnchorPane layoutY="-8.0" prefHeight="156.0" prefWidth="1141.0" styleClass="root" stylesheets="@../model/cssFiles/TrangChu1.css" />
+      <Hyperlink layoutX="1051.0" layoutY="165.0" onAction="#trangchu" style="-fx-background-color: skyblue;" text="Trang Chủ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Hyperlink>
+      <TableView fx:id="myTable" layoutX="3.0" layoutY="140.0" prefHeight="527.0" prefWidth="1132.0">
+        <columns>
+          <TableColumn fx:id="sttColum" prefWidth="76.0" text="NO" />
+            <TableColumn fx:id="idColum" prefWidth="125.0" text="Postal Code" />
+            <TableColumn fx:id="nameColum" prefWidth="152.0" text="First Name" />
+            <TableColumn fx:id="ageColum" prefWidth="160.0" text="Last Name" />
+            <TableColumn fx:id="birthdayColum" minWidth="4.0" prefWidth="127.0" text="Birthday" />
+            <TableColumn fx:id="gtColum" prefWidth="141.0" text="Nickname" />
+            <TableColumn fx:id="classColum" prefWidth="167.0" text="Street" />
+            <TableColumn fx:id="addressColum" minWidth="0.0" prefWidth="180.0" text="City" />
+
+        </columns>
+      </TableView>
+      <JFXButton layoutX="56.0" layoutY="727.0" onAction="#addStudent" text="New" textFill="#061e1a" />
+      <JFXButton layoutX="254.0" layoutY="727.0" onAction="#editStudent" text="Edit" />
+      <JFXButton layoutX="480.0" layoutY="727.0" onAction="#deleteStudent" text="Delete" />
+      <JFXButton layoutX="713.0" layoutY="727.0" onAction="#thoat" text="Exit" />
+   </children>
+</AnchorPane>

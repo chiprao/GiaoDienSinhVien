@@ -1,11 +1,10 @@
 package model;
 
-import javax.lang.model.element.NestingKind;
 import java.io.Serializable;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class StudentDK implements Serializable {
+public class StudentkQ implements Serializable {
 
     private int stt;
     private int id;
@@ -20,11 +19,11 @@ public class StudentDK implements Serializable {
     private String tk;
     private String xl;
 
-    public StudentDK() {
+    public StudentkQ() {
         super();
     }
 
-    public StudentDK(int stt, int id, String ten, int tuoi, Date day, String gioitinh, String lop, String diachi) {
+    public StudentkQ(int stt, int id, String ten, int tuoi, Date day, String gioitinh, String lop, String diachi, String gk, String ck, String tk, String xl) {
         super();
         this.stt = stt;
         this.id = id;
@@ -35,7 +34,10 @@ public class StudentDK implements Serializable {
         this.gioitinh = gioitinh;
         this.lop = lop;
         this.diachi = diachi;
-
+        this.gk = gk;
+        this.ck = ck;
+        this.tk = tk;
+        this.xl = xl;
     }
 
     public int getStt() {
@@ -100,5 +102,37 @@ public class StudentDK implements Serializable {
 
     public void setDiachi(String diachi) {
         this.diachi = diachi;
+    }
+
+    public String getGk() {
+        return gk;
+    }
+
+    public void setGk(String gk) {
+        this.gk = gk;
+    }
+
+    public String getCk() {
+        return ck;
+    }
+
+    public void setCk(String ck) {
+        this.ck = ck;
+    }
+
+    public String getTk() {
+        return tk;
+    }
+
+    public void setTk(String tk) {
+        this.tk = tk;
+    }
+
+    public String getXl() {
+        return xl;
+    }
+
+    public void setXl(String xl) {
+        this.xl = xl;
     }
 }

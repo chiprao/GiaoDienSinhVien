@@ -1,8 +1,6 @@
 package controllerFiles;
 
 import Data.ReadFileXML;
-import com.jfoenix.controls.JFXButton;
-import javaFiles.Main;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -14,9 +12,7 @@ import javafx.scene.control.*;
 import javafx.stage.Stage;
 import model.User;
 
-import java.awt.event.MouseEvent;
 import java.io.IOException;
-import java.lang.ref.PhantomReference;
 import java.net.URL;
 import java.util.List;
 import java.util.ResourceBundle;
@@ -61,7 +57,7 @@ public class ControllerLogin implements Initializable {
 
     public void login(ActionEvent event) throws IOException {
         if (testUser(new User(username.getText(), password.getText()))) {
-            Parent root = FXMLLoader.load(getClass().getResource("/fxmlFiles/TrangChuGV.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/view/TrangChuGV.fxml"));
             Scene scene = new Scene(root);
             Stage stage= (Stage)((Node)event.getSource()).getScene().getWindow();
             stage.setScene(scene);

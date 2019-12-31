@@ -17,7 +17,7 @@ public class ControllerTrangChu implements Initializable {
     // thong tin sinh vien
     @FXML
     public void thongtin(javafx.event.ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("/fxmlFiles/ThongTinSinhTrangChu.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/view/ThongTinSinhTrangChu.fxml"));
         Scene scene = new Scene(root);
         Stage NewStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         NewStage.setScene(scene);
@@ -26,7 +26,7 @@ public class ControllerTrangChu implements Initializable {
 
     @FXML
     public void Ketqua(javafx.event.ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("/fxmlFiles/KetQuaTrangChuGV.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/view/KetQuaTrangChuGV.fxml"));
         Scene scene = new Scene(root);
         Stage NewStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         NewStage.setScene(scene);
@@ -36,7 +36,7 @@ public class ControllerTrangChu implements Initializable {
     // dang xuat
     @FXML
     public void dangxuat(javafx.event.ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("/fxmlFiles/Login.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/view/Login.fxml"));
         Scene scene = new Scene(root);
         Stage NewStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         NewStage.setScene(scene);

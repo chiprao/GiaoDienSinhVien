@@ -17,4 +17,13 @@ public class WriteFileXML {
         encoder.close();
         fos.close();
     }
+
+    public static void wrieDataKQ(List<Student> list) throws IOException {
+        List<Student> temp = list;
+        FileOutputStream fos = new FileOutputStream(new File("./diem.xml"));
+        XMLEncoder encoder = new XMLEncoder(fos);
+        encoder.writeObject(temp);
+        encoder.close();
+        fos.close();
+    }
 }

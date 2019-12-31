@@ -65,7 +65,7 @@ public class ControllerThongTinTrangChu implements Initializable {
     // tro ve trang chu
     @FXML
     public void trangchu(javafx.event.ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("/fxmlFiles/TrangChuGV.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/view/TrangChuGV.fxml"));
         Scene scene = new Scene(root);
         Stage NewStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         NewStage.setScene(scene);
@@ -86,6 +86,11 @@ public class ControllerThongTinTrangChu implements Initializable {
                     student.getDiachi()));
         }
         return li;
+    }
+
+    @FXML
+    public void thoat(ActionEvent event) {
+        ((Stage)(((Button)event.getSource()).getScene().getWindow())).close();
     }
 
     @Override
@@ -159,7 +164,7 @@ public class ControllerThongTinTrangChu implements Initializable {
     public void editStudent(ActionEvent event) {
         Stage stage = new Stage();
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("/fxmlFiles/EditForm.fxml"));
+        loader.setLocation(getClass().getResource("/view/EditForm.fxml"));
         Parent EditView;
         try {
             EditView = loader.load();
@@ -179,7 +184,7 @@ public class ControllerThongTinTrangChu implements Initializable {
     public void addStudent(ActionEvent event) {
         Stage stage = new Stage();
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("/fxmlFiles/EditForm.fxml"));
+        loader.setLocation(getClass().getResource("/view/EditForm.fxml"));
         Parent EditView;
         try {
             EditView = loader.load();
